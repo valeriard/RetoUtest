@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.19/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="44d0142c33a45362384e3400fd1cd6a81b6d766f4f3557b21495576eb14b94fe.html">Carry Out The Completion Of The Form In Order To Create A New Username.</a></span>
+                > <span class="truncate-60"><a
+                    href="be581a0ac723c497a4afe09c49a99c5f7b865305236d6329f87c6971d057758e.html">fill out the form to create a new user </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 04-11-2021 09:19</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Carry Out The Completion Of The Form In Order To Create A New Username. </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="8c7302b7c58b9e6a59f35d556fd976fc6535cb4914d55e5dfa11f6a443a0b96f.html">New User
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="24aacda3e479b17aef4c2fafa3fb6f2fcac1704edab883a1848f7adc3af41546.html">Test
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">fill out the form to create a new user
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given Valeria going to create a new user<br><table class='embedded'><thead><th>firstname</th><th>lastname</th><th>email</th><th>month</th><th>day</th><th>year</th><th>languages</th><th>city</th><th>postal</th><th>model</th><th>syos</th><th>password</th></thead><tbody><tr><td>&lt;firstname&gt;</td><td>&lt;lastname&gt;</td><td>&lt;email&gt;</td><td>&lt;month&gt;</td><td>&lt;day&gt;</td><td>&lt;year&gt;</td><td>&lt;languages&gt;</td><td>&lt;city&gt;</td><td>&lt;postal&gt;</td><td>&lt;model&gt;</td><td>&lt;syos&gt;</td><td>&lt;password&gt;</td></tr></tbody></table><br>When Valeria going to into sign in<br><table class='embedded'><thead><th>email</th><th>password</th></thead><tbody><tr><td>&lt;email&gt;</td><td>&lt;password&gt;</td></tr></tbody></table><br>Then Valeria going to  verify her account<br><table class='embedded'><tbody><tr><td>email</td></tr><tr><td>&lt;email&gt;</td></tr></tbody></table></div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="c96bba81a06c6675b110bfce3e4a69551238b3d756eebdb9a71e601cc48b8411.png" title=" Example: {firstname=Valeria, lastname=Diossa, email=valved56@chartering.com, month=August, day=7, year=1993, languages=Span, city=Medellin, Antioquia, Colombia, postal=050001, model=iPhone 4, syos=iOS 11.3, password=Retotecnico2021+}" width="1366"/>
+                <img src="c96bba81a06c6675b110bfce3e4a69551238b3d756eebdb9a71e601cc48b8411.png" title=" Given Valeria going to create a new user
+| firstname | lastname | email | month | day | year | languages | city | postal | model | syos | password |
+| Valeria | Diossa | valved56@chartering.com | August | 7 | 1993 | Span | Medellin, Antioquia, Colombia | 050001 | iPhone 4 | iOS 11.3 | Retotecnico2021+ |" width="1366"/>
+                <img src="c96bba81a06c6675b110bfce3e4a69551238b3d756eebdb9a71e601cc48b8411.png" title=" Valeria open up" width="1366"/>
+                <img src="c96bba81a06c6675b110bfce3e4a69551238b3d756eebdb9a71e601cc48b8411.png" title=" valeria opens the Utest page" width="1366"/>
+                <img src="77730a10dcf9647bbb4f4494679f1f28938bcf7f88d7dd4622c6be692806af23.png" title=" valeria clicks on Join Today" width="1366"/>
+                <img src="77730a10dcf9647bbb4f4494679f1f28938bcf7f88d7dd4622c6be692806af23.png" title=" Valeria open up (completed)" width="1366"/>
+                <img src="f95054ba8e71a4ee7a13229ab178ba7a0ae966322ba8c486cc3a5d8a09e39222.png" title=" Valeria data personal" width="1366"/>
+                <img src="f95054ba8e71a4ee7a13229ab178ba7a0ae966322ba8c486cc3a5d8a09e39222.png" title=" valeria enters 'Valeria' into FIRST NAME" width="1366"/>
+                <img src="ef384607e4dfe9fa55c3a85c119c339c9745e48bb03bb6329ecc45b7a4a8a4db.png" title=" valeria enters 'Diossa' into LAST NAME" width="1366"/>
+                <img src="11c787aa5612fc8551c51e07344f6dd536b6a5dde0facc07d26052c417812c06.png" title=" valeria enters 'valved56@chartering.com' into EMAIL" width="1366"/>
+                <img src="e08794002c6f7cc4f07e3e6bd09babd0d2f41e21b0b0b3e538f792c8681d3965.png" title=" valeria select August on DATE OF BIRTH" width="1366"/>
+                <img src="85a1a7d33c51083c3f72ad73c1275bcb143892ddc5046321450c06976461e942.png" title=" valeria select 7 on DAY" width="1366"/>
+                <img src="65b334ea040bee2fafbddc1d0020461c57a565b9c2c5eb609ab4ef74a9974848.png" title=" valeria select 1993 on YEAR" width="1366"/>
+                <img src="7ce05c6129a48dcde522194ccdc0d6a0d72c652d4254cd21a7e02bee01990d69.png" title=" valeria clicks on LANGUAGES" width="1366"/>
+                <img src="f97d4a715b9b3c0c97fa208f84b6eda22b46a5861a3bdb703c47699bc9e0d9f2.png" title=" valeria enters 'Span' then hits [ENTER] into LANGUAGES" width="1366"/>
+                <img src="6392f60082135f63e7822155664925d91244090288de675d867aae551dae0072.png" title=" valeria clicks on NEXT LOCATION" width="1366"/>
+                <img src="6392f60082135f63e7822155664925d91244090288de675d867aae551dae0072.png" title=" Valeria data personal (completed)" width="1366"/>
+                <img src="6bb0be5acb10b97e2754f2b5220666510adb9be0edb727b0775bbce0b3f250f4.png" title=" Valeria user address" width="1366"/>
+                <img src="6bb0be5acb10b97e2754f2b5220666510adb9be0edb727b0775bbce0b3f250f4.png" title=" valeria clicks on CITY" width="1366"/>
+                <img src="2da248139a931173ba1adf06567a7ee04b5f03faa3f9f6c8941ad6915e5c93a7.png" title=" valeria enters 'Medellin, Antioquia, Colombia' into CITY" width="1366"/>
+                <img src="2da248139a931173ba1adf06567a7ee04b5f03faa3f9f6c8941ad6915e5c93a7.png" title=" valeria types 'ARROW_DOWN' in CITY" width="1366"/>
+                <img src="c86cda2495fe935a464e6ea82d15f5c00e8c0c66e91749906006f0ceca47d361.png" title=" valeria clicks on POSTAL" width="1366"/>
+                <img src="b477869f7aebdfc62cd2912a2ce0fb4e22d2bdc37eceb7d503c94433492cb26f.png" title=" valeria enters '050001' into POSTAL" width="1366"/>
+                <img src="1c830b12a8cab4a868ec95df87dee907a8a97e352108d715b218f52cd35814d6.png" title=" valeria clicks on COUNTRY" width="1366"/>
+                <img src="cf6bcef8dc2410330a6b40150e55d1b7604a48b17ce99034a8b5270713693aca.png" title=" valeria clicks on NEXT DEVICE" width="1366"/>
+                <img src="cf6bcef8dc2410330a6b40150e55d1b7604a48b17ce99034a8b5270713693aca.png" title=" Valeria user address (completed)" width="1366"/>
+                <img src="b0574ba2711dc2cc94f837481ccc2b118675ed6626c71e5a381b1f2b4c857841.png" title=" Valeria user device" width="1366"/>
+                <img src="b0574ba2711dc2cc94f837481ccc2b118675ed6626c71e5a381b1f2b4c857841.png" title=" valeria clicks on YOUR COMPUTER" width="1366"/>
+                <img src="9ce5f42f3e0a5637c59039ca787fe107af07c39c451c373243d0a7bc3f557161.png" title=" valeria clicks on VERSION" width="1366"/>
+                <img src="04ed2a37646ed0f28395edd6c2213c5db64aba20c6b83c5d847170f1d0f28f9c.png" title=" valeria clicks on LANGUAGE2" width="1366"/>
+                <img src="efae73b765fc343320b554ec3762a059bf553cb14c90e5b470e671ccf633643d.png" title=" valeria clicks on YOUR MOBILE DEVICE" width="1366"/>
+                <img src="81c1fc2854e7d47c6e343d0de5384a4b4834f118d8a947069ee32d99dd4ab70c.png" title=" valeria clicks on MODEL" width="1366"/>
+                <img src="c74a48e22497c708da8f5e2b74b8abf4887b71b1e37902ea680d34d4eb9921e9.png" title=" valeria enters 'iPhone 4' then hits [ENTER] into MODEL 4" width="1366"/>
+                <img src="efe13dcf9cde824be1f133e8ea7ec4dff010a16f423048f3dabe539fc3ef3114.png" title=" valeria clicks on CLICK EN OPSYS" width="1366"/>
+                <img src="d5d5905d2bf0beae63bae9249709ca654166d8740b08ddb2d68c4509c5ebdfbc.png" title=" valeria enters 'iOS 11.3' then hits [ENTER] into CLICK EN IOS" width="1366"/>
+                <img src="b2cdcb6d85219031ae01aa83f9c5c408e27c74c3a559a815c39061e64ea6e310.png" title=" valeria clicks on NEXT DEVICE" width="1366"/>
+                <img src="b2cdcb6d85219031ae01aa83f9c5c408e27c74c3a559a815c39061e64ea6e310.png" title=" Valeria user device (completed)" width="1366"/>
+                <img src="15a3d3aee8546bac51eac1ab5c76c6ece58403276462def0654a480693c65d90.png" title=" Valeria user complete" width="1366"/>
+                <img src="15a3d3aee8546bac51eac1ab5c76c6ece58403276462def0654a480693c65d90.png" title=" valeria clicks on CLICK PASSWORD" width="1366"/>
+                <img src="d36e3a13cd7f9f62833a3630a416eee0c6b5d063a04f21d9cea093ea13c02c48.png" title=" valeria enters 'Retotecnico2021+' into CLICK PASSWORD" width="1366"/>
+                <img src="a06d9adf8241877d04f2605f2aa137f8b7f2b8182983583879da48912f834b1c.png" title=" valeria clicks on CONFIRM PASSWORD_CONFIRM" width="1366"/>
+                <img src="cb6b74a776da72dd678ae0889455dd3c38bf5de843a49210bbca076b02ed6012.png" title=" valeria enters 'Retotecnico2021+' into CONFIRM PASSWORD_CONFIRM" width="1366"/>
+                <img src="b254a79eba431a4c82023b2f64488ffbf4f91568a2740d4c0862b282ed87888d.png" title=" valeria clicks on CLICK ACCEPT" width="1366"/>
+                <img src="b84173e5204938b31c9be21469fc9e5890e52e405a3d6e64a3d3a1bc77a95605.png" title=" valeria clicks on CLICK PRIVACY" width="1366"/>
+                <img src="cc0d0ae9d49ce35295639e403d8e51eea0f5737bdbbd0fa9837818148ade1f1a.png" title=" valeria clicks on COMPLETE SETUP" width="1366"/>
+                <img src="cc0d0ae9d49ce35295639e403d8e51eea0f5737bdbbd0fa9837818148ade1f1a.png" title=" Valeria user complete (completed)" width="1366"/>
+                <img src="cc0d0ae9d49ce35295639e403d8e51eea0f5737bdbbd0fa9837818148ade1f1a.png" title=" Given Valeria going to create a new user
+| firstname | lastname | email | month | day | year | languages | city | postal | model | syos | password |
+| Valeria | Diossa | valved56@chartering.com | August | 7 | 1993 | Span | Medellin, Antioquia, Colombia | 050001 | iPhone 4 | iOS 11.3 | Retotecnico2021+ | (completed)" width="1366"/>
+                <img src="38743d058e576f75de0907f064146cd7253d3657a86314f7faf2857da9e085b3.png" title=" When Valeria going to into sign in
+| email | password |
+| valved56@chartering.com | Retotecnico2021+ |" width="1366"/>
+                <img src="38743d058e576f75de0907f064146cd7253d3657a86314f7faf2857da9e085b3.png" title=" Valeria sing in" width="1366"/>
+                <img src="38743d058e576f75de0907f064146cd7253d3657a86314f7faf2857da9e085b3.png" title=" valeria clicks on SIGN IN" width="1366"/>
+                <img src="d39b7ba61575e88a416677f7f9d826b4c78eac2bd928cf8bc41fad339f094c17.png" title=" valeria clicks on  ENTER PASSWORD" width="1366"/>
+                <img src="36cdb0060b383a4ddb839f4c688c7d4898952e22fe6afeeb7171620ce58b4c2d.png" title=" valeria enters 'valved56@chartering.com' into EMAIL ADDRESS" width="1366"/>
+                <img src="59b10a73e1a53673985395dc72e6ee7cee425f1444365089b62bd9f1b95726c8.png" title=" valeria clicks on  ENTER PASSWORD" width="1366"/>
+                <img src="3064412cfb53872b1bcfb5c29dcc7a5d85d8c8ef8cd4dad26829f3dcfaa19675.png" title=" valeria enters 'Retotecnico2021+' into  ENTER PASSWORD" width="1366"/>
+                <img src="bc29b226b94708314ad2c7d6f4ad2ee0a9013087f6dc2908c0e6f62336fe5e3e.png" title=" valeria clicks on SIGN IN" width="1366"/>
+                <img src="bc29b226b94708314ad2c7d6f4ad2ee0a9013087f6dc2908c0e6f62336fe5e3e.png" title=" Valeria sing in (completed)" width="1366"/>
+                <img src="bc29b226b94708314ad2c7d6f4ad2ee0a9013087f6dc2908c0e6f62336fe5e3e.png" title=" When Valeria going to into sign in
+| email | password |
+| valved56@chartering.com | Retotecnico2021+ | (completed)" width="1366"/>
+                <img src="bc29b226b94708314ad2c7d6f4ad2ee0a9013087f6dc2908c0e6f62336fe5e3e.png" title=" Then Valeria going to  verify her account
+| email |
+| valved56@chartering.com |" width="1366"/>
+                <img src="bc29b226b94708314ad2c7d6f4ad2ee0a9013087f6dc2908c0e6f62336fe5e3e.png" title=" Then answer" width="1366"/>
+                <img src="bc29b226b94708314ad2c7d6f4ad2ee0a9013087f6dc2908c0e6f62336fe5e3e.png" title=" Then Valeria going to  verify her account
+| email |
+| valved56@chartering.com | (completed)" width="1366"/>
+                <img src="bc29b226b94708314ad2c7d6f4ad2ee0a9013087f6dc2908c0e6f62336fe5e3e.png" title=" Example: {firstname=Valeria, lastname=Diossa, email=valved56@chartering.com, month=August, day=7, year=1993, languages=Span, city=Medellin, Antioquia, Colombia, postal=050001, model=iPhone 4, syos=iOS 11.3, password=Retotecnico2021+} (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.1.0</span>
+</div>
+</body>
+</html>

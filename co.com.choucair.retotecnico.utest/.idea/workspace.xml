@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4dc93f33-4d17-40b0-b1a6-83efd142b41b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/retoUtest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/retoUtest.feature" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="20Q8M90a1hNVGW459VQHQ3WnmZw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="co.com.choucair.retotecnico.utest.tasks" />
+      <recent name="co.com.choucair.retotecnico.utest.userinterface" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Junital" type="JUnit" factoryName="JUnit">
+      <module name="co.com.choucair.retotecnico.utest.test" />
+      <option name="PACKAGE_NAME" value="co.com.choucair.retotecnico.utest.runners" />
+      <option name="MAIN_CLASS_NAME" value="co.com.choucair.retotecnico.utest.runners.RetoUtest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4dc93f33-4d17-40b0-b1a6-83efd142b41b" name="Default Changelist" comment="" />
+      <created>1635965399116</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635965399116</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1091" y="22" key="#Project_Structure" timestamp="1635966169459">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="-1091" y="22" key="#Project_Structure/0.0.1366.728/-1366.0.1366.728@-1366.0.1366.728" timestamp="1635966169459" />
+    <state x="-953" y="118" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1636031678730">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="-953" y="118" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728/-1366.0.1366.728@-1366.0.1366.728" timestamp="1636031678730" />
+    <state x="-1229" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1635968297494">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="-1229" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/-1366.0.1366.728@-1366.0.1366.728" timestamp="1635968297494" />
+    <state x="-878" y="64" key="#com.intellij.ide.util.MemberChooser" timestamp="1636031114678">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="-878" y="64" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/-1366.0.1366.728@-1366.0.1366.728" timestamp="1636031114678" />
+    <state x="-953" y="139" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1636031061542">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="-953" y="139" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.728/-1366.0.1366.728@-1366.0.1366.728" timestamp="1636031061542" />
+    <state x="-954" y="147" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1635968282801">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="-954" y="147" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728/-1366.0.1366.728@-1366.0.1366.728" timestamp="1635968282801" />
+    <state x="-953" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1636034497607">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="-953" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/-1366.0.1366.728@-1366.0.1366.728" timestamp="1636034497607" />
+    <state width="1323" height="304" key="GridCell.Tab.0.bottom" timestamp="1636036834417">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="304" key="GridCell.Tab.0.bottom/0.0.1366.728/-1366.0.1366.728@-1366.0.1366.728" timestamp="1636036834417" />
+    <state width="1323" height="304" key="GridCell.Tab.0.center" timestamp="1636036834416">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="304" key="GridCell.Tab.0.center/0.0.1366.728/-1366.0.1366.728@-1366.0.1366.728" timestamp="1636036834416" />
+    <state width="1323" height="304" key="GridCell.Tab.0.left" timestamp="1636036834415">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="304" key="GridCell.Tab.0.left/0.0.1366.728/-1366.0.1366.728@-1366.0.1366.728" timestamp="1636036834415" />
+    <state width="1323" height="304" key="GridCell.Tab.0.right" timestamp="1636036834417">
+      <screen x="-1366" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="304" key="GridCell.Tab.0.right/0.0.1366.728/-1366.0.1366.728@-1366.0.1366.728" timestamp="1636036834417" />
+  </component>
+</project>
